@@ -102,7 +102,7 @@ body {
 /**------------------SECTION ONE---------------------**/
 .hidden {}
 
-.section-one-title {
+.subtitle {
      font-weight: 500;
      font-size: 20px;
      line-height: 1.2;
@@ -110,9 +110,28 @@ body {
      color: var(--main-title-color);
 }
 
-.section-one-text {
+.text {
      font-size: 16px;
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: var(--main-text-color);
+}
+ 
+/**----------------------SECTION TWO---------------------**/
+.title {
+     font-size: 36px;
+     line-height: 1.11;
+     text-align: center;
+     letter-spacing: 0.02em;
+     text-transform: capitalize;
+     color: var(--main-title-color);
+}
+
+/**---------------------SECTION THREE-------------------**/
+.section-three {
+    background-color: #F4F4FD;
+}
+
+.item-three {
+background-color: #ffffff;
 }
