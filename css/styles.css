@@ -1,9 +1,10 @@
 :root {
     --main-background-color: #ffffff;
     --second-background-color: #4d5ae5;
+    --third-background-color: #F4F4FD;
     --main-title-color: #2e2f42;
     --main-text-color: #434455;
-
+    --hover-color: #404bbf;
 } 
 
 body {
@@ -51,7 +52,7 @@ body {
 
 .header-link:hover,
 .header-link:focus {
-    color: #404bbf;
+    color: var(--hover-color);
 }
 
 .header-address {
@@ -70,8 +71,9 @@ body {
 
 .contacts:hover,
 .contacts:focus {
-    color: #404bbf
+    color: var(--hover-color);
 }
+
  /**------------------------HERO------------------------------**/
  .hero-section {
     background-color: var(--main-title-color);
@@ -82,7 +84,7 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: var(--main-background-color);
  }
 
  .hero-btn {
@@ -92,13 +94,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: var(--main-background-color);
     cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #404bbf;
+    background-color: var(--hover-color);
 }
 
 /**------------------SECTION ONE---------------------**/
@@ -131,11 +133,29 @@ body {
 
 /**---------------------SECTION THREE-------------------**/
 .section-three {
-    background-color: #F4F4FD;
+    background-color: var(--third-background-color);
 }
 
 .item-three {
-background-color: #ffffff;
+background-color: var(--main-background-color);
+}
+
+/**------------------------PORTFOLIO----------------------**/
+.portfolio-btn {
+     background-color: var(--third-background-color);
+     font-family: Roboto, sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.04em;
+     color: var(--second-background-color);
+     cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: var(--main-background-color);
+    background-color: var(--hover-color);
 }
 
 /**-------------------FOOTER--------------------**/
@@ -144,12 +164,12 @@ background-color: #ffffff;
 }
 
 .logo-studio-footer {
-    color: #f4f4fd;
+    color: var(--third-background-color);
 }
 
 .text-footer {
      font-size: 16px;
      line-height: 24px;
      letter-spacing: 0.02em;
-     color: #F4F4FD;
+     color: var(--third-background-color);
 }
