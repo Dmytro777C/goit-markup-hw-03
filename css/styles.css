@@ -36,6 +36,12 @@ body {
 
 .list {
     list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    margin: 24px;
 }
 
 .link {
@@ -171,13 +177,15 @@ body {
      line-height: 1.2;
      letter-spacing: 0.02em;
      color: var(--main-title-color);
-}
+     margin-bottom: 8px;
+}  
 
 .text {
      font-size: 16px;
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: var(--main-text-color);
+     width: 264px;
 }
  
 /**----------------------SECTION TWO---------------------**/
@@ -192,9 +200,16 @@ body {
      letter-spacing: 0.02em;
      text-transform: capitalize;
      color: var(--main-title-color);
+     margin-bottom: 72px;
 }
 
 /**---------------------SECTION THREE-------------------**/
+.indent {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
 .section-three {
     background-color: var(--third-background-color);
     padding-top: 120px;
@@ -238,4 +253,6 @@ background-color: var(--main-background-color);
      line-height: 24px;
      letter-spacing: 0.02em;
      color: var(--third-background-color);
+     width: 264px;
+     margin-top: 17.5px;
 }
