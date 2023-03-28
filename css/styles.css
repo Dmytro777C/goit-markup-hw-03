@@ -40,14 +40,15 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-}
-
-.item {
-    margin: 12px;
+    gap: 24px;
 }
 
 .link {
     text-decoration: none;
+}
+
+.imgs {
+    display: block;
 }
 
 /**----------------------HEADER-------------------**/
@@ -109,6 +110,7 @@ body {
 .address-list {
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
 .contacts {
@@ -127,7 +129,6 @@ body {
  /**------------------------HERO------------------------------**/
  .hero-section {
     background-color: var(--main-title-color);
-    height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -148,7 +149,6 @@ body {
  .hero-btn {
     border-radius: 4px;
     padding: 16px 32px;
-    height: 56px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -167,8 +167,8 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/**------------------SECTION ONE---------------------**/
-.section-one {
+/**------------------SECTION 1-HIDDEN SKILLS---------------------**/
+.section-skills {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -189,11 +189,13 @@ body {
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: var(--main-text-color);
-     width: 264px;
 }
  
-/**----------------------SECTION TWO---------------------**/
-.section-two {
+.txt-skills{
+    width: 264px;
+}
+/**----------------------SECTION WWDOING---------------------**/
+.section-doing {
     padding-bottom: 120px;
 }
 
@@ -207,14 +209,13 @@ body {
      margin-bottom: 72px;
 }
 
-/**---------------------SECTION THREE-------------------**/
+/**---------------------OUR TEAM-------------------**/
 .indent {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
     text-align: center;
 }
 
-.section-three {
+.section-team {
     background-color: var(--third-background-color);
     padding-top: 120px;
     padding-bottom: 120px;
@@ -227,6 +228,21 @@ border-radius: 0px 0px 4px 4px;
 }
 
 /**------------------------PORTFOLIO----------------------**/
+.portfolio-header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolio-btns-list {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
 .portfolio-btn {
      background-color: var(--third-background-color);
      font-family: Roboto, sans-serif;
@@ -242,34 +258,16 @@ border-radius: 0px 0px 4px 4px;
      cursor: pointer;
 }
 
-.div-btns {
-    padding-top: 96px;
-    padding-bottom: 84px;
-    margin-left: 260px;
-}
 
 .portfolio-imgs {
     flex-wrap: wrap;
-}
-
-.div-imgs {
-    padding-bottom: 120px;
-}
-
-.item-portfolio {
-    margin-right: 18px;
-}
-
-.it-p-full {
-    margin-bottom: 54px;
-        background: #FFFFFF;
-        border: 1px solid #E7E9FC;
+    gap: 48px 24px;
 }
 
 .indent-imgs-portfolio {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-left: 24px;
+  padding: 32px 16px;
+  border: 1px solid #E7E9FC;
+  border-top: none;
 }
 
 .portfolio-btn:hover,
